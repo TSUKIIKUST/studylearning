@@ -19,12 +19,23 @@
         </processorPath>
         <module name="springboot-web-01" />
       </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="springboot-mybatis-first.main" />
+        <module name="springboot-mybatis-first.test" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="25" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-web-quickstart" options="-parameters" />
+      <module name="springboot-mybatis-first" options="-parameters" />
+      <module name="springboot-mybatis-first.main" options="-parameters" />
+      <module name="springboot-mybatis-first.test" options="-parameters" />
       <module name="springboot-web-01" options="-parameters" />
     </option>
   </component>

@@ -7,6 +7,14 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/spingboot-mybatis-quickstart" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springboot-mybatis-first" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/springboot-mybatis-first" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/springboot-mybatis-quickstart" />
       </GradleProjectSettings>
     </option>

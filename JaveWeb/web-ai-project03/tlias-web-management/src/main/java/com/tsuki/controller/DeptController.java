@@ -1,0 +1,29 @@
+package com.tsuki.controller;
+
+
+import com.tsuki.pojo.Dept;
+import com.tsuki.pojo.Result;
+import com.tsuki.service.DeptService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class DeptController {
+
+        @Autowired
+        private DeptService deptService;
+
+        //@RequestMapping(value = "/depts", method = RequestMethod.GET)
+         @GetMapping("/depts")
+        public Result list() {
+                System.out.println("查询所有部门");
+               List<Dept> deptList = deptService.findALL();
+               return Result.success(deptList);
+
+        }
+}

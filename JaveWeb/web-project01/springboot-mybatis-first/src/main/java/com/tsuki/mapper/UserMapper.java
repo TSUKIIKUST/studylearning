@@ -12,7 +12,7 @@ public interface UserMapper {
     //注解: 用于指定查询语句
     //参数: 1. 查询语句
     //返回值: 查询结果
-    @Select("select * from user")
+    //@Select("select * from user")
     public List<User> findAll();
 
     @Delete("delete from user where id = #{id}")
